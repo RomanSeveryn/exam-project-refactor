@@ -22,7 +22,7 @@ const RegistrationPage = (props) => {
           <Logo src={ `${ CONSTANTS.STATIC_IMAGES_PATH }logo.png` }/>
           <div className={ styles.linkLoginContainer }>
             <Link to='/login'
-                  style={ {textDecoration: 'none'} }><span>Login</span></Link>
+                  className={styles.link}>Login</Link>
           </div>
         </div>
         <RegistrationForm changeRoute={ changeRoute }/>
