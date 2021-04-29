@@ -49,9 +49,8 @@ class Header extends React.Component{
         } else {
             return (
                 <>
-                    <Link to='/login' style={{textDecoration: 'none'}}><span className={styles.btn}>LOGIN</span></Link>
-                    <Link to='/registration' style={{textDecoration: 'none'}}><span
-                        className={styles.btn}>SIGN UP</span></Link>
+                    <Link to='/login' className={styles.link}>LOGIN</Link>
+                    <Link to='/registration' className={styles.link}>SIGN UP</Link>
                 </>
             )
         }
@@ -70,8 +69,8 @@ class Header extends React.Component{
                 <div className={styles.loginSignnUpHeaders}>
                     <div className={styles.numberContainer}>
                         <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt='phone'/>
-                        <Link>
-                        <span>(877)&nbsp;355-3585</span>
+                        <Link className={styles.number}>
+                        (877)&nbsp;355-3585
                         </Link>
                     </div>
                     <div className={styles.userButtonsContainer}>
